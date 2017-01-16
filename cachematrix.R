@@ -1,15 +1,19 @@
-## Put comments here that give an overall description of what your
-## functions do
+################################################## WEEK 3
+################################################## Programming Assingment 2 (Peer review)
+################################################## Guilherme Asai Oliveira
 
-## Write a short comment describing this function
-
-makeCacheMatrix <- function(x = matrix()) {
-
+'Create a Matrix in Cache' #small adaptation, I didn't have a matrix, so I created a random numeric vector and coerced it into a matrix
+makeCacheMatrix = function(X = numeric())
+{
+  
+  M <<- matrix(X, nrow = sqrt(length(x)),ncol = sqrt(length(x))) #M is the cached value of matrix X
+ 
 }
 
 
-## Write a short comment describing this function
-
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+'Calculate the Invert Matrix'
+cacheSolve = function (x = matrix())
+{
+  M <<- solve(x)
+  View(M)
 }
