@@ -2,18 +2,19 @@
 ################################################## Programming Assingment 2 (Peer review)
 ################################################## Guilherme Asai Oliveira
 
-'Create a Matrix in Cache' #small adaptation, I didn't have a matrix, so I created a random numeric vector and coerced it into a matrix
-makeCacheMatrix = function(X = numeric())
+#Create a Matrix in Cache#
+
+makeCacheMatrix = function(X = numeric()) 
 {
   
-  M <<- matrix(X, nrow = sqrt(length(x)),ncol = sqrt(length(x))) #M is the cached value of matrix X
+  M <<- matrix(X, nrow = sqrt(length(x)),ncol = sqrt(length(x))) #Assigns to M the cached value of matrix (or numeric vector) X, which means that M is defined in another environment
  
 }
 
 
-'Calculate the Invert Matrix'
+#Calculate the Invert Matrix#
 cacheSolve = function (x = matrix())
 {
-  M <<- solve(x)
-  View(M)
+  M <<- solve(x)  #It calculates the Inverse of any invertible matrix and assigns its value to M
+  View(M)         #Shows the Inverse of the Matrix provided as a parameter of the cacheSolve function
 }
